@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Birthday Surprise 🎂</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Poppins:wght@400;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="confetti"></canvas>
+
+<!-- 1. CURTAIN + CLOCK -->
+<section id="curtain" class="scene active">
+  <div class="drape left"></div><div class="drape right"></div>
+  <div class="clockwrap">
+    <div class="clock"><i class="h"></i><i class="m"></i><i class="s"></i><b></b></div>
+    <div class="cdbox"><small>MIDNIGHT COUNTDOWN</small><strong id="cd">12:00:00</strong><em>watch the clock strike 12:00:00</em></div>
+  </div>
+</section>
+
+<!-- 2. PASSCODE -->
+<section id="lock" class="scene">
+  <div class="stampwrap"><div class="stamp"><img id="lockImg" alt=""></div></div>
+  <div class="panel">
+    <h2>Enter a passcode</h2>
+    <p id="lockMsg">Enter the 4-digit secret passcode 💘</p>
+    <div class="boxes" id="boxes"><span></span><span></span><span></span><span></span></div>
+    <div class="keys" id="keys"></div>
+    <button id="retry" class="pill">Try Again 🔄</button>
+  </div>
+</section>
+
+<!-- 3 & 4. ASK / EXCITED -->
+<section id="ask" class="scene cute">
+  <h1 id="askTitle">I have made something for you</h1>
+  <img id="askImg" class="sticker" alt="">
+  <p id="askMsg">Do you wanna see it ?</p>
+  <div class="btns"><button class="pill" id="yes">YES</button><button class="pill" id="no">NO</button></div>
+</section>
+
+<!-- 5. GIFTS -->
+<section id="gifts" class="scene cute">
+  <div class="hearts" id="hearts"></div>
+  <div class="mystery"><img id="mysteryImg" alt=""></div>
+  <p class="tap">Tap on the mystery box<br><small>to unlock your gifts!</small></p>
+</section>
+
+<!-- 6. MEMORIES -->
+<div class="modal" id="memories">
+  <div class="card">
+    <button class="x" data-close>✕</button>
+    <div class="banner" id="banner"></div>
+    <div class="string"></div>
+    <button class="arrow l" id="prev">‹</button>
+    <div class="track" id="track"></div>
+    <button class="arrow r" id="next">›</button>
+    <span class="cam">📷</span>
+    <p class="hint">Tap any photo to see it away, or use ‹ › arrows to view all memories!</p>
+  </div>
+</div>
+
+<!-- 7. LETTER -->
+<div class="modal" id="letter">
+  <div class="lettercard">
+    <button class="x light" data-close>✕</button>
+    <div class="frame"><img id="letterImg" alt=""><i class="ribbon"></i></div>
+    <div class="text" id="typed"></div>
+  </div>
+</div>
+
+<!-- 8. WISH -->
+<div class="modal" id="wish">
+  <div class="card wishcard">
+    <button class="x" data-close>✕</button>
+    <h2 id="wishTitle">MAKE A WISH</h2>
+    <div class="love">i love<br>you</div>
+    <div class="cake"><div class="candles" id="candles"></div><div class="tier t1"></div><div class="tier t2"></div></div>
+    <div class="side"><div class="balloons"><i class="b1"></i><i class="b2"></i></div><img id="wishKid" alt=""></div>
+    <p class="hint" id="wishHint">Tap any candle to blow it out, or tap the cake to blow them all out! 🕯️</p>
+    <div class="wishbar hide" id="wishBar">
+      <span>🎉 May your year be as sweet, bright, and delightful as this birthday cake! All your dreams will come true! 💗</span>
+      <button class="pill sm" id="relight">🕯️ Relight Candles</button>
+      <button class="pill sm ghost" data-close>💗 Back to Gifts</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
