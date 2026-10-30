@@ -1,5 +1,5 @@
 /* ================= CONFIG — edit these ================= */
-const PASSCODE = "2006";               // 4-digit secret code
+const PASSCODE = "2009";               // 4-digit secret code
 const COUNTDOWN_SECONDS = 4;           // curtain clock time before it opens
 
 // Put your own sticker/photo files in assets/stickers/ and set the path here.
