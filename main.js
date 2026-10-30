@@ -14,7 +14,7 @@ const STICKERS = {
   letter:   null,   // letter-screen photo
   wishKid:  null    // small kid beside the cake
 };
-const Kedar dada= [   // add/remove freely: [image or null, caption]
+const My kedar dada= [   // add/remove freely: [image or null, caption]
   [null, "Make Make Cake! 🎂"],
   [null, "Best Gift 🎁"],
   [null, "My bhai+ Friend 💗"],
